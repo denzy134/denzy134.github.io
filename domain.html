@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+        <title>Register Page</title>
+        <link rel="stylesheet" type="text/css" href="/css/screen.css" media="screen">
+    </head>
+    <body>
+
+        <h1>Register Domain Name</h1>
+
+
+        <form id="frmRegister" method="post" action="registerD.php">
+            <fieldset>
+                <legend>Please Complete All Fields</legend>
+                <ul>
+                    <li>Last Name (as listed in ILearn): <input type="text" name="txtlName" id="txtlName" size="30" /></li>
+                    <li>First Name (as listed in ILearn): <input type="text" name="txtfName" id="txtfName" size="20" /></li>
+               <li><select name="txtSection" id="txtSection">
+<option value="">Section -- Please select -- </option>
+                            <option>Section 6 (MWF 11:30-12:30)</option>
+                            <option>Section 4 (MWF 10:15-11:15)</option>
+                                                        
+    </select></li>
+                    <li>Domain Name <span style="font-size:11px"> (without the http://) </span> <input type="text" name="txtDomain" id="txtDomain" size="40" /></li>
+                    
+                    <li><input type="submit" name="submit" id="submit" value="Send"></li>
+                </ul>
+            </fieldset>
+        </form>
+
+    </body>
+</html>
