@@ -47,17 +47,17 @@
             a:link{color:#000000}        
             a:visited {color:rgb(0%,100%,0%);} 
             a:hover {background-color: white;}
-            a:active {color: rgb(0,0,255);}  	
+            a:active {color: rgb(0,0,255);}  
+            
+            header {grid-column: 1/ span 3; grid-row: 1;}
+            nav{
+                grid-column: 1/ span 3; grid-row: 2;
+            }
+            
 
-            div#left-col{position: absolute;left:0%;margin-top:0%;width: 15%;
-            height:3000px; border: solid thin blue; float: left;}
-
-            main {margin-left: 15%;margin-right: auto; margin-top:0%;width:70%; height:3000px;border:solid thin blue;  }	
-
-            aside{position: absolute;right:0%;margin-top: 0% width:15% height: 3000px; border: solid thin blue; list-style: none;}  
-
-            footer {position: fixed; bottom:0px;width:100%;border:solid meduim black;
-            text-align:center;}	
+            footer {grid-column: 1/span 3; grid-row: 4;}	
+            
+            .grid-container {display: grid; background-color: #2186F3;padding: 0px;}
 
             /*apply colors to look like ppt*/	
             header {background-color:#9F9;} 
@@ -67,12 +67,14 @@
             div#right-col{background-color:green;}
             aside{background-color:blue;}
             footer{background-color:#0CF;}
-            body {background-color:#DDF; border: 1px solid blue; margin-top:-1em;}			
-
+            body {background-color:#DDF; border: 1px solid blue; margin-top:-1em;}	
+            
+           
             /*<link href="../css/w9-css.css" rel="stylesheet" type="text/css" >*/
         </style>    
     </head>
     <body>
+        <div class="grid-container">
         <header>
             <!--<h3>(the header section)</h3>-->
             <h1 class="dropcap">The Rock Market</h1>
@@ -93,7 +95,7 @@
                 <li><a href="rock-jewelry.html">Rock Jewelry</a></li>
                 <li> <a href="week4-ponder-prove-anchors.html#fx">Featured Market Items</a> </li>
             </ol>
-            
+           
             </nav>
         <div id="left-col">
             <!--<h3>(the left column section)</h3>-->
@@ -129,5 +131,6 @@
                 <li class="fs24pt"><a href="week4-ponder-prove-anchors.html#ho">Hours of Operation</a></li>
             </ul>
         </footer>
+        </div>
     </body>
 </html>

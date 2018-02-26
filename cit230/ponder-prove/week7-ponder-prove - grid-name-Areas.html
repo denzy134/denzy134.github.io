@@ -47,17 +47,25 @@
             a:link{color:#000000}        
             a:visited {color:rgb(0%,100%,0%);} 
             a:hover {background-color: white;}
-            a:active {color: rgb(0,0,255);}  	
+            a:active {color: rgb(0,0,255);}  
+            
+           /* main {height:3000px;}
+            
+            aside{ height:3000px;}  */
 
-            div#left-col{position: absolute;left:0%;margin-top:0%;width: 15%;
-            height:3000px; border: solid thin blue; float: left;}
+            footer { position: fixed; text-align: center; width: 100%; bottom:0px;border:solid medium black;}	
+            
+            header {grid-area: header; border:solid thin;}
+            nav{
+                grid-area: header; border:solid thin;
+            }
+            div#left-col{grid-area:left; border:solid thin; height:700px;}
 
-            main {margin-left: 15%;margin-right: auto; margin-top:0%;width:70%; height:3000px;border:solid thin blue;  }	
+            main {grid-area: header; border:solid thin; height:700px;}	
 
-            aside{position: absolute;right:0%;margin-top: 0% width:15% height: 3000px; border: solid thin blue; list-style: none;}  
+            aside{grid-area: right; border:solid thin;}  
 
-            footer {position: fixed; bottom:0px;width:100%;border:solid meduim black;
-            text-align:center;}	
+            footer {grid-area: footer;}	
 
             /*apply colors to look like ppt*/	
             header {background-color:#9F9;} 
@@ -67,7 +75,9 @@
             div#right-col{background-color:green;}
             aside{background-color:blue;}
             footer{background-color:#0CF;}
-            body {background-color:#DDF; border: 1px solid blue; margin-top:-1em;}			
+            body {background-color:#DDF; border: 1px solid blue; margin-top:-1em;}	
+            
+            .grid-container {display: grid; grid-template-areas: 'header header header' 'nav nav nav''left middle right' 'footer footer footer';}
 
             /*<link href="../css/w9-css.css" rel="stylesheet" type="text/css" >*/
         </style>    
@@ -93,6 +103,8 @@
                 <li><a href="rock-jewelry.html">Rock Jewelry</a></li>
                 <li> <a href="week4-ponder-prove-anchors.html#fx">Featured Market Items</a> </li>
             </ol>
+            <!--comment out nav lists below-->
+        
             
             </nav>
         <div id="left-col">
@@ -108,8 +120,6 @@
             <!--<h3>(the middle column)</h3>-->
             <p style=font-weight:bold;color:yellow;font-size:24px;>Do you love <b>rocks </b> do you?</p>
            
-            
-            
             
         </main>
         <aside>

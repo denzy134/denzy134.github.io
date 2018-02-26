@@ -31,8 +31,7 @@ l1 {
     padding:inherit;
 }
 
-main {
-    margin: 1em 2em;
+    main {margin-left: 15%;margin-right: auto; margin-top:0%;width:70%; height:300px;border:solid meduim black;
 }
     
    header
@@ -45,9 +44,7 @@ main {
 
 footer
 {
-   padding:2em;
-    color:black;
-    background:red;   
+  position: fixed;bottom:0px; width:10%; border: solid meduim black; text-align: center;
 }
 
 aside
