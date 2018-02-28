@@ -7,7 +7,7 @@ h1
 
 body
 {
-    margin:2em;
+    margin:0;
     padding:0;
     font-family:cursive,helvetica,sans-serif;
     background-color: green;
@@ -17,11 +17,10 @@ h1
 {
     margin:0;
 }
-h2,h3,h4,h5,h6 {color:green;}
+h2,h3,h4,h5,h6 {color:black;}
 
 ol 
 {font-style: italic;
-  border: 3px solid black;
  background-color: yellow;
 }
 l1 {
@@ -36,15 +35,30 @@ l1 {
     
    header
 {
-    padding:2em;
+    padding:0;
     color:black;
-    background:yellow; 
+    background:yellow;
+    border: solid black;
     
 }
 
 footer
 {
-  position: fixed;bottom:0px; width:10%; border: solid meduim black; text-align: center;
+  position: fixed; bottom:0px; width:100%; border: solid meduim black; text-align: center; background-color: aqua;margin-bottom: 0;margin-left: 0
+}
+
+footer ul li{
+    list-style: none;
+    margin-left: 1em;
+}
+
+footer ul{
+    display: flex;
+   
+}
+
+/*.firstp{
+    width:40%;*/
 }
 
 aside
@@ -74,7 +88,21 @@ nav li a
 {
     text-decoration: none;
 }
-img
+
+#div1
 {
-    float: left;
+    display:flex;
+    justify-content: space-between;
+}
+
+#div2
+{
+    display:flex;
+    justify-content: space-between;
+    
+    
+}
+
+footer p{
+    width: 15%;
 }
