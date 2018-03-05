@@ -30,16 +30,15 @@ l1 {
     padding:inherit;
 }
 
-    main {margin-left: 15%;margin-right: auto; margin-top:0%;width:70%; height:300px;border:solid meduim black;
-}
+   
     
    header
 {
     padding:0;
-    color:black;
+    color:whitesmoke;
     background:black;
     border:white;
-    height: 170px;
+    height:200px;
     
 }
 
@@ -64,6 +63,7 @@ nav ul
     list-style: none;
     display:flex;
     justify-content: space-around;
+    
 }
 
 nav li
@@ -84,7 +84,7 @@ nav li a
 #nav2
 {
     position: absolute;left:0%;margin-top:0%;width: 15%;
-    height:3000px; border: solid thin blue; float: left;}
+    height:3000px; border: solid thin; float: left; font-size: 15;}
 
             
 main 
@@ -94,7 +94,7 @@ main
             
 aside
 {
-    position: absolute;right:0%;margin-top: 0% width:15% height: 3000px; border: solid thin blue; list-style: none;} 
+    position: absolute;right:0%;margin-top: 0% width:15% height: 300px; border: solid thin blue; list-style: none;} 
 
 #div1
 {
