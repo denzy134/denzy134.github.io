@@ -44,7 +44,7 @@ l1 {
 
 footer
 {
-  position: fixed; bottom:0px; width:100%; border: solid meduim black; text-align: center; background-color:black;margin-bottom: 0;margin-left: 0;
+  position: fixed; bottom:0px; width:100%; border: white; text-align: center; background-color:black;margin-bottom: 0;margin-left: 0;
 }
 
 footer ul li{
@@ -84,7 +84,7 @@ nav li a
 #nav2
 {
     position: absolute;left:0%;margin-top:0%;width: 15%;
-    height:3000px; border: solid thin; float: left; font-size: 15;}
+    height:3000px; border: solid thin; float: left; font-size: 15em;}
 
             
 main 
@@ -94,7 +94,7 @@ main
             
 aside
 {
-    position: absolute;right:0%;margin-top: 0% width:15% height: 300px; border: solid thin blue; list-style: none;} 
+    position:absolute;right:0%;margin-top: 0%; width:15%; height: 300px; border: solid thin blue; list-style: none;} 
 
 #div1
 {
@@ -121,5 +121,5 @@ aside
 footer p{
     width: 15%;
 }
-footer 
+ 
 /*{ position: fixed; text-align: center; width: 100%; bottom:0px;border:solid medium black;}*/
