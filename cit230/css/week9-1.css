@@ -63,5 +63,30 @@ header img {width: 10%;}
             footer{background-color:#0CF;}
             body {background-color:#DDF; border: 1px solid blue;}		 
        
-            /*<link href="../css/w9-css.css" rel="stylesheet" type="text/css" >*/
-    </style>
+ 
+@media screen and (max-width: 722px) {
+div#left-col {background-color:blue;}
+}
+    nav a {display: block;width:100%;text-align:center;}
+    
+    main {background-color: yellow;
+    }
+        
+    aside{background-color: purple;}
+    
+   
+            
+  @media print 
+  {
+      nav a {font-size:.05em font-weight: bold;}
+      div#left-col { height:20em;}
+      main{height:20em;}
+    aside{height:20em;}
+      footer{height:20em;}
+            }
+            
+            @media screen and (max-width:1399px) {
+                footer a {display:inline-block:width:100;text-align:center;font-size:.5em;}
+            }
+
+ #divleft-col, main, aside{font-size: 1vw }

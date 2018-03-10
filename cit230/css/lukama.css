@@ -19,9 +19,11 @@ h1
 }
 h2,h3,h4,h5,h6 {color:black;}
 
+/*
 ol 
 {font-style: italic;
  background-color: white;
+*/
 }
 l1 {
     font-weight: 200;
@@ -37,10 +39,23 @@ l1 {
     padding:0;
     color:whitesmoke;
     background:black;
-    height:100px;
+    height:130px;
     position:fixed;
-    width: 4000px;
+    width: 100%;
+    top: 0;
     
+}
+
+header img{
+    float:left;
+}
+
+header p{
+    clear:left;
+}
+
+.group{
+    margin-top: 130px;
 }
 
 footer
@@ -65,8 +80,7 @@ nav ul
     display:flex;
     justify-content: space-around;
     background-color: white;
-    position: absolute;
-    
+  
 }
 
 nav li
@@ -97,7 +111,7 @@ main
             
 aside
 {
-    position:absolute;right:0%;margin-top: 0%; width:15%; height: 300px; border: solid thin blue; list-style: none;} 
+    right:0%;margin-top: 0%; width:15%; height: 300px; border: solid thin blue; list-style: none;} 
 
 #div1
 {
