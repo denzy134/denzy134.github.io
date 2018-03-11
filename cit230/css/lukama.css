@@ -1,6 +1,6 @@
 h1 
 {
-    color:white;
+    color:black;
     margin:0;
    text-align:center;
 }
@@ -23,10 +23,17 @@ body
     font-size: 90px;
   }
 }
-
+ 
 @media screen and (max-width: 600px) {
   div.example {
     font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.example {
+    font-size: 30px;
+    
   }
 }
 
@@ -97,7 +104,7 @@ nav ul
     display:flex;
     justify-content: space-around;
     background-color: white;
-  @media only screen and (min-width: 601px) {
+  @media only screen and (min-width: 408px) {
   div.example {
     font-size: 80px;
   }
@@ -157,6 +164,7 @@ aside
 {
     display:flex;
     justify-content: flex-start;
+    max-width: 100%;
 }
 
 #img2
@@ -199,6 +207,15 @@ aside
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+}
+@media screen and (max-width: 1020px) {
+  #main, #header, #content, #footer {
+    float: none;
+    width: auto;
+  }
+}
+    p{ font-size: 2em; }
+
 }
 
 
