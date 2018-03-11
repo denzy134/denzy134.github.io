@@ -178,7 +178,7 @@ aside
 [class*="col-"] {
     width: 100%;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 320px) {
     /* For tablets: */
     .col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}
@@ -193,7 +193,7 @@ aside
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 480px) {
     /* For desktop: */
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -214,9 +214,34 @@ aside
     width: auto;
   }
 }
-    p{ font-size: 2em; }
+   
 
+@media screen and (max-width: 722px) {
+div#left-col {background-color:blue;}
 }
+    nav a {display: block;width:100%;text-align:center;}
+    
+    main {background-color: yellow;
+    }
+        
+    aside{background-color: purple;}
+    
+   
+            
+  @media print 
+  {
+      nav a {font-size:.05em font-weight: bold;}
+      div#left-col { height:20em;}
+      main{height:20em;}
+    aside{height:20em;}
+      footer{height:20em;}
+            }
+            
+            @media screen and (max-width:1399px) {
+                footer a {display:inline-block:width:100;text-align:center;font-size:.5em;}
+            }
+
+  main, aside{font-size: 1vw }
 
 
 footer p{
