@@ -220,22 +220,30 @@ iframe {
     
 
 @media screen and (max-width: 722px) {
-body {background-color:blue;}
+body {background-color:blue;
+       height:1500px;
+        
+    }
 }
     nav ul {display: block;width:100%;text-align:center;}
     
     main {background-color: yellow;
-    }
+        font: 70px;
+        width: 70%;
         
+    }
+ 
     aside{background-color: purple;}
+footer{
+    width: 500px;
+    height:40px;
+}
 
 @media all and (orientation: landscape) {
     
 }
 
-    
-   
-            
+ 
   @media print 
   {
       nav a {font-size:5em; font-weight: bold;}  
