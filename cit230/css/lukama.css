@@ -195,9 +195,7 @@ aside
         
     aside{background-color: purple;
 }
-    font{40px;
-        
-    
+    font{40px;          
 }
 
 figure {
@@ -233,7 +231,9 @@ body {background-color:blue;}
         
     aside{background-color: purple;}
 
-@media all and (orientation: landscape) {...}
+@media all and (orientation: landscape) {
+    
+}
 
     
    
@@ -248,7 +248,7 @@ body {background-color:blue;}
             
             @media screen and (max-width:1399px) 
             {
-                footer a {display:inline-block:width:100;text-align:center;font-size:5em;}
+                footer a {display:inline-block; width:100%;text-align:center;font-size:5em;}
             }
 
   main, aside{font-size: 1vw }
