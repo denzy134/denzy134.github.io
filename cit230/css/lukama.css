@@ -93,7 +93,7 @@ header p{
 
 footer
 {
-  position: fixed; bottom:0px; width:100%; border: white; text-align: center; background-color:black;margin-bottom: 0;margin-left: 0;
+  position: fixed; bottom:0px; width:700%; border: white; text-align: center; background-color:black;margin-bottom: 0;margin-left: 0;
 }
 
 footer ul li{
@@ -264,3 +264,4 @@ footer p{
     width: 15%;
 }
  
+ main, aside{font-size: 1vw }
