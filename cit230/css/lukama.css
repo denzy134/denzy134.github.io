@@ -38,11 +38,6 @@ nav li a
     position: absolute;left:0%;margin-top:0%;width: 15%;
     height:3000px; border: solid thin; float: left;}
 
-}
-
-p{
-    font: 
-}
 
 body
 {
@@ -136,9 +131,7 @@ footer ul li{
 footer ul{
     display: flex;
    
-*/
-}
-/*
+
 #div1
 {
     display:flex;
