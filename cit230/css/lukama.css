@@ -17,17 +17,20 @@ nav{
     font-size:1em; 
     line-height: 200%;
 }
-nav li
+
+}
+nav ul
 {
-   
+   list-style: none;
     margin-right: 1em;
+    
 }
 
-nav li a
+nav ul li 
 {
     color:white;
     font-size: 1em;
-    text-decoration: none;
+    display:block;
    
     
 }
@@ -81,6 +84,9 @@ header p{
     justify-content: center;
    
 }
+picture img{
+    width: 100%;
+}
     main 
 {
     margin-left: 15%;
@@ -120,6 +126,53 @@ footer
 {
   position: fixed; bottom:0px; width:700%; border: white; text-align: center; background-color:black;margin-bottom: 0;margin-left: 0;
 }
+
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: black;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position:relative;
+    display:inline-block;
+    margin-left: 30%;
+    font: black;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
 
 /*
 footer ul li{
@@ -178,13 +231,16 @@ iframe {
 
 /*large styles*/
 
-@media only screen and (max-width: 480px) {
-    body {background-color:blue;}
-}
-    nav ul {display: block;width:100%;text-align:center;}
+@media only screen and (min-width:800px) {
     
-    main {background-color: yellow;
-    }
-        
-    aside{background-color: purple;
+    nav ul {
+            width:100%;
+            list-style: none;
+       
 }
+    nav ul li{
+        display:inline;
+    }
+   
+}
+
