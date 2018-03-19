@@ -22,24 +22,24 @@
 
            $("#enterName").click(function(){
                alert("Hello" + document.alertform.yourname.value + 
-                     "pleae type in yur full name" );
+                     "please type in yur full name" );
            });
             
             
 
-            $("major").(function () {
+            $("major").click(function () {
                 alert("Hello " + document.alertform.yourname.value + " make sure you select CIT!!!");
             });
 
-            $("#changeBcolor#").hover(function () {
-                    $()("background-color", "blue");
+            $("#changeBcolor").hover(function () {
+                    $(this).css("background-color", "blue");
                 },
                 function () {
                     $(this).css("background-color", "red");
                 });
 
             $("#yes").hover(function () {
-                    $(this)(" YES! ");
+                    $(this).append(" YES! ");
                 },
                 function () {
                     $(this).append(" I MEAN AFFIRMATIVE! ");
@@ -49,7 +49,7 @@
                 $(this).css("background-color", "green");
             });
             $("#colorHide").dblclick(function () {
-                $(this)("slow");
+                $(this).hide("slow");
             });
 
             $("button").click(function () {
@@ -93,7 +93,7 @@
             <li> <a href="week4-ponder-prove-anchors.html#fx">Featured Market Items</a> </li>
         </ol>
     </nav>
-
+<div class="flex-container">
     <div id="left-col">
         <ul>
             <li> <a href="rock-users.html">Rock Users</a> </li>
@@ -113,9 +113,8 @@
             <br>  
             <div id="flip">Click to slide down panel; double click to close</div>
             <div id="panel">
-                <div id="changeBcolor" style="background-color:#D94A38;
-                                              width:20%; height:100px; 
-                                              margin-left:auto;margin-right:auto;">Hello</div>
+                <div id="changeBcolor" style="background-color:#D94A38; width:20%; height:100px; 
+                margin-left:auto;margin-right:auto;">Hello</div>
             </div>
             <br>
             <br>
@@ -182,16 +181,16 @@
             <br>
 
             <label for="verify">&nbsp;</label>
-            <input type="button" Value="Verify">
+            <button id="p30" type="button" Value="Verify">
 
             <label for="submit">&nbsp;</label>
-            <button type="submit" name="Submit">Submit</button>
+            <button id="p31" type="submit" name="Submit">Submit</button>
 
             <label for="reset">&nbsp;</label>
-            <input type="reset" value="Reset">
+            <button id="p32" type="reset" value="Reset">
             <br>
             <br>
-            Change the background color of all above buttons
+            <button>Change the background color of all above buttons</button>
 
         </form>
     </div>
@@ -230,7 +229,7 @@
         <br>
         <br>
     </aside>
-
+            </div>
     <footer>
         <!--<h3>(the footer section)</h3>-->
         <ul>
