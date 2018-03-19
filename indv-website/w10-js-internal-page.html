@@ -1,0 +1,116 @@
+ <!DOCTYPE HTML>
+<html>
+  
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="lpg, fibre glass cylinder, cylinder, kitchen, safety, fire">
+        <meta name="description" content="Secrets to kitchen fire safety">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="minimum-scale=1">
+
+        <title>Our Story</title>
+        <link href = "../cit230/css/lukama.css" rel = "stylesheet"  type="text/css">
+        
+        
+    </head>
+    <body>
+     <header>
+            <nav>
+                
+            <img src= "../cit230/indv-design-docs/logo.png" alt ="logo" style ="width: 100px;height:100px;">
+         
+            
+           
+	    <ul> 
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about-us.html">Who are we</a></li>
+            <li><a href="testimonial.html">Testimonials</a></li>
+            <li><a href="vision.html">The vision of the Company</a></li>
+            <li><a href="../cit230-links.html">CIT230-links</a></li>
+        </ul>
+        </nav>
+        </header>
+         <div class="group">
+    
+    <h2>JPay here</h2>
+
+
+<button onclick="myFunction()">click</button>
+
+<p id="demo"></p>
+
+
+<script>
+function myFunction() {
+    var txt;
+    if (confirm("Will you pay!")) {
+        txt = "You pressed OK!";
+    } else {
+        txt = "You pressed Cancel!";
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+</script>
+
+             </div>
+        </div>
+  
+      <br> 
+        
+
+<p id="demo1">Large element.</p>
+
+<button type="button" onclick="document.getElementById('demo1').style.fontSize='35px'">Click Me!</button>
+        
+<h2> Login Form</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="..cit230/ponder-prove/images/computer.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+          <footer>
+           <ul> 
+              
+            <li><a href> contact us</a></li>
+              
+              
+              </ul>
+        </footer>
+    </body>
+</html>
