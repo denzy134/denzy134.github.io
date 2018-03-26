@@ -8,20 +8,20 @@
           <meta name="viewport" content="width=device-width, initial-scale=1">      
         <title>Our Story</title>
         <link href = "../cit230/css/lukama.css" rel = "stylesheet"  type="text/css">
-        
+         <script type="text/javascript" src="../cit230/ponder-prove/week11%20myjsondata.json"></script>
         
     </head>
   <body onload = "loadMap()">
-    <h2>Dubai Hotels</h2>
+    <h2>Places in London</h2>
     <div id = "map" style = "width:640px; height:480px;"></div>
-      <script type="text/javascript" src="week11-json-data.json"></script>
+     
 <script> 
         
 
         function loadMap() {
           // Initialize Google Maps
           const mapOptions = {
-     center:new google.maps.LatLng(25.2048,55.2708),
+     center:new google.maps.LatLng(51.5074, 0.1278),
        zoom:11      
           }
           const map = new google.maps.Map(document.getElementById("map"),mapOptions);

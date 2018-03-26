@@ -9,42 +9,8 @@
         <title>Our Story</title>
         <link href = "../cit230/css/lukama.css" rel = "stylesheet"  type="text/css">
         
-        
     </head>
-  <body onload = "loadMap()">
-    <h2>Dubai Hotels</h2>
-    <div id = "map" style = "width:640px; height:480px;"></div>
-      <script type="text/javascript" src="week11-json-data.json"></script>
-<script> 
-        
-
-        function loadMap() {
-          // Initialize Google Maps
-          const mapOptions = {
-     center:new google.maps.LatLng(25.2048,55.2708),
-       zoom:11      
-          }
-          const map = new google.maps.Map(document.getElementById("map"),mapOptions);
-            
-            var mydata = JSON.parse(data);
-
-//          // Load JSON Data
-//            const hotelMarkers = getJSONMarkers();
-
-          // Initialize Google Markers
-          for(x=0;x<3;x++) {
-            let marker = new google.maps.Marker({
-            map:map,
-                position:new google.maps.LatLng(mydata[x].location[0],mydata[x].location[1]),
-                title:mydata[x].name
-                
-                          
-            })
-          }
-        }
-      </script>
-      <script src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyB8-Y7cVL-zpQlLmbk7eP1TTTtfcHxEQwg&sensor=true"></script>
-    >
+    <body>
      <header>
             <nav>
                 
@@ -59,8 +25,46 @@
         </ul>
         </nav>
         </header>
+        <div id="map" style="width:50%;height:300px"></div>
+
+ <script>
+ function myMap() {
+  var myCenter =new google.maps.LatLng(5.6037,0.1870);
+  var mapCanvas =document.getElementById("map");
+var mapOptions = {
+
+     center:new google.maps.LatLng(5.6037,0.1870),
+    zoom: 9,
+    panControl: true,
+    zoomControl: true,
+    mapTypeControl: true,
+    scaleControl: true,
+    streetViewControl: true,
+    overviewMapControl: true,
+    rotateControl: true
+    };
+ var map = new google.maps.Map(mapCanvas,mapOptions);
+        var marker =new google.maps.Marker({
+            position: myCenter
+                });
+        marker.setMap(map);
+
+
+                // Zoom to 9 when clicking on marker
+                google.maps.event.addListener(marker, 'click', function () {
+                        var pos =map.getZoom();
+                            map.setZoom(9);
+                        map.setCenter(marker.getPosition());
+                        window.setTimeout(function() {
+                            map.setZoom(pos);
+                        }, 3000);
+                });
+                }
+            </script>
+
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8-Y7cVL-zpQlLmbk7eP1TTTtfcHxEQwg&callback=myMap"></script>
         
-      
+    
     <div class="group">
         
         <h1>OUR TESTIMONIES </h1>
