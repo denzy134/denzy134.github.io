@@ -3,19 +3,75 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en" xml:lang = "en" dir="ltr">
 <head>
-<title>contact-info.html</title>
-<p>Posted last on Tuesday May 20 2014</p>
-<meta http-equiv="content-type" content="text/html; 
-	charset=iso-8859-1" />
-</head>
-<body>
-<p>Posted last on Tuesday May 20 2014</p>
-<h1>The xhtml Market</h1>
+        <meta charset="utf-8">
+        <meta name="keywords" content="lpg, fibre glass cylinder, cylinder, kitchen, safety, fire">
+        <meta name="description" content="Secrets to kitchen fire safety">
+          <meta name="viewport" content="width=device-width, initial-scale=1">      
+        <title>Contact info</title>
+        <link href = "../cit230/css/lukama.css" rel = "stylesheet"  type="text/css">
+         <script type="text/javascript" src="../cit230/ponder-prove/lukamamapjsondata.json"></script>
+        
+    </head>
+   <header>
+            <nav>
+                
+            <img src= "../cit230/indv-design-docs/logo.png" alt ="logo" style ="width: 100px;height:100px;">
+         
+            
+           
+	    <ul> <li><a href="contact-info.html">Contact us </a></li>
+            <li><a href="../cit230-links.html">CIT230-links</a></li>
+        </ul>
+        </nav>
+        </header>
+        
+      
+    <div class="group"></div>
+        
+    
+<h1>The lukama company</h1>
 <h2>Contact Information</h2>
-<p>If you have any questions or concerns about the xhtml Market, please call (208) 999-9999.</p>
+<p>If you have any questions or concerns about the lukama company, please call (208) 999-9999.</p>
 <p>You can also send mail to the xhtml Market at the following address:</p>
 <p>P.O. Box 999<br />
-Rexburg, ID 83460</p>
-<p><a href="week6-ponder-prove.html">Home</a></p>
+Accra,Ghana 83460</p>
+        
+     <body onload = "loadMap()">
+    <h2>Lukama in Ghana</h2>
+    <div id = "map" style = "width:640px; height:480px;"></div>
+     
+<script> 
+        
+
+        function loadMap() {
+          // Initialize Google Maps
+          const mapOptions = {
+     center:new google.maps.LatLng(5.6037, 0.1870),
+       zoom:6      
+          }
+          const map = new google.maps.Map(document.getElementById("map"),mapOptions);
+            
+            var mydata = JSON.parse(data);
+
+//          // Load JSON Data
+//            const hotelMarkers = getJSONMarkers();
+
+          // Initialize Google Markers
+          for(x=0;x<3;x++) {
+            let marker = new google.maps.Marker({
+            map:map,
+                position:new google.maps.LatLng(mydata[x].location[0],mydata[x].location[1]),
+                title:mydata[x].name
+                
+                          
+            })
+          }
+        }
+      </script>
+      <script src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyB8-Y7cVL-zpQlLmbk7eP1TTTtfcHxEQwg&sensor=true"></script>
+         
+         
+<p><a href="../index.html">Home</a></p>
 </body>
+        
 </html>
