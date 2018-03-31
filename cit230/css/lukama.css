@@ -88,18 +88,13 @@ picture img{
 
     padding-bottom: 15%;
     margin-right: auto;
-}
-/*
-    margin-top:0%;
-    height:700px;
-    */
 
     border:0;
-    font-size: 1.2em;
+    font-size: 1.2em;}
+
     
 #space{
-    margin-bottom: 5em;
-   
+    margin-bottom: 5em;   
 }
 .demo{
     margin:1em;
