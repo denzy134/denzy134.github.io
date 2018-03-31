@@ -97,8 +97,6 @@ picture img{
     border:0;
     font-size: 1.2em;
     
-
-
 #space{
     margin-bottom: 5em;
    
@@ -134,8 +132,7 @@ footer
     color: white;
     display;
     width:100%;
-    border: white;
-    
+    border:white;   
 }
 table
 {
